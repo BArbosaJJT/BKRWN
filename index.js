@@ -1,36 +1,24 @@
-function Obtener_datos() {
-  let n1 = parseFloat(document.getElementById("num1").value);
-  let n2 = parseFloat(document.getElementById("num2").value);
-  return [n1, n2];
-}
+const frases = [
+  "🔥 Sexo Alocado  🔥",
+  "💔 No hay sexo 💔",
+  "💘 Sexo con hijoss 💘",
+  "😅 Mejor como amigos 😅",
+  "🌹  Sexo romantico 🌹",
+  "⚡Chispas de amor⚡",
+  "🚫 Ni lo intentes 🚫",
+  "😍  Sexo re loco con tussi 😍"
+];
 
-function sumar() {
-  const [n1, n2] = Obtener_datos();
-  document.getElementById("resultado").innerText =
-    "Resultado de la Suma es: " + (n1 + n2);
-}
+function calcularMatch() {
+  const nombre1 = document.getElementById("nombre1").value.trim();
+  const nombre2 = document.getElementById("nombre2").value.trim();
+  const resultado = document.getElementById("resultado");
 
-function restar() {
-  const [n1, n2] = Obtener_datos();
-  document.getElementById("resultado").innerText =
-    "Resultado de la Resta es: " + (n1 - n2);
-}
-
-function multiplicar() {
-  const [n1, n2] = Obtener_datos();
-  document.getElementById("resultado").innerText =
-    "Resultado de la Multiplicación es: " + n1 * n2;
-}
-
-function dividir() {
-  const [n1, n2] = Obtener_datos();
-  if (n2 === 0) {
-    document.getElementById("resultado").innerText =
-      "Error: No se puede dividir entre cero.";
-  } else {
-    document.getElementById("resultado").innerText =
-      "Resultado de la División es: " + n1 / n2;
+  if (nombre1 === "" || nombre2 === "") {
+    resultado.innerHTML = "⚠️ Escribe ambos nombres ⚠️";
+    return;
   }
+
+  const fraseRandom = frases[Math.floor(Math.random() * frases.length)];
+  resultado.innerHTML = `${nombre1} 💕 ${nombre2}: ${fraseRandom}`;
 }
-
-
