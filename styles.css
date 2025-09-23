@@ -1,62 +1,62 @@
-.imagen-tralalero {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.imagen-tralalero img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #74ebd5, #9face6);
+  font-family: Arial, sans-serif;
+  background: url('https://media.cults3d.com/1Tralalero-Tralala-Hardfacee.png') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   margin: 0;
 }
 
-input[type="number"] {
-  width: 100px;
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  width: 320px;
+}
+
+h1 {
+  color: #ff4f81;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #00000040;
+}
+
+input {
+  width: 90%;
   padding: 10px;
-  margin: 10px;
-  font-size: 18px;
+  margin: 8px 0;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 2px solid #ff4f81;
+  font-size: 16px;
   text-align: center;
 }
 
-.container {
-  margin-top: 20px;
-}
-
 button {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 16px;
+  background: #ff4f81;
+  color: #fff;
   border: none;
-  border-radius: 10px;
-  background-color: #4b79a1;
-  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 button:hover {
-  background-color: #283e51;
+  background: #ff2f6d;
 }
 
 #resultado {
-  margin-top: 30px;
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
   color: #333;
-  background-color: #fff;
-  padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
